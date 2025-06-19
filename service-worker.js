@@ -4,15 +4,14 @@ const ASSETS_TO_CACHE = [
   "/index.html",
   "/src/style.css",
   "/src/main.js",
-  "/src/assets/images/1.png",
   "/src/assets/images/ar_hand_prompt-human-hand.png",
   "/src/assets/images/ar_hand_prompt.png",
   "/src/assets/images/ar_icon.png",
   "/src/assets/images/poster.webp",
-  "/src/assets/models/upperbody_skeleton_heart_lungs.glb",
-  "/src/assets/poster/heart.webp",
   "/localhost-cert.pem",
-  "/localhost-key.pem"
+  "/localhost-key.pem",
+  "/src/assets/models/konark_sphere_cutout.glb",
+  "/src/assets/models/rajarani_temple_sphere_cutout.glb",
 ];
 
 // Install event
