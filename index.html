@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konark Sun Temple</title>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+
+  <body>
+    <div class="scroll-container">
+      <div class="section">
+        <div class="left">
+          <div>
+            <h1>Konark Sun Temple</h1>
+            <p>
+              The Konark Sun Temple, built in the 13th century in Odisha, India,
+              is a UNESCO World Heritage Site renowned for its stunning
+              architecture resembling a colossal chariot dedicated to the Sun
+              God, Surya. Its intricate stone carvings and massive wheels
+              showcase the pinnacle of Kalinga artistry.
+            </p>
+          </div>
+        </div>
+        <div class="right">
+          <model-viewer
+            src="src/assets/models/konark_sphere_cutout.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            tone-mapping="neutral"
+            poster="poster.webp"
+            shadow-intensity="1"
+          >
+            <button
+              class="Hotspot"
+              slot="hotspot-1"
+              data-position="13.03967736319431m 8.117942618683369m -0.15112550817842063m"
+              data-normal="0.9988882442857154m -0.007998586057440698m -0.04645748646755117m"
+              data-visibility-attribute="visible"
+            >
+              <div class="HotspotAnnotation">Jagamohana</div>
+            </button>
+            <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">View in your space</button>
+            <div id="ar-prompt">
+              <img src="https://modelviewer.dev/shared-assets/icons/hand.png" />
+            </div>
+          </model-viewer>
+        </div>
+      </div>
+    </div>
+    <script src="src/main.js"></script>
+  </body>
+</html>
